@@ -1,12 +1,16 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
-    double number;
-    char alphabet;
+    bool iamstupid = true;
 
-    printf("Enter double input and character: ");
-    scanf("%lf %c", &number, &alphabet);  //scan the memory address
+    char name[15] = "";
 
-    printf("Number= %lf Character= %c", number, alphabet);
+    if (iamstupid) {
+        printf("Enter your name: ");
+        scanf("%14s", name);
+        printf("%s is an idiot.", name);
+    }
+
     return 0;
 }
