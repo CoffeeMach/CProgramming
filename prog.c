@@ -30,12 +30,12 @@ int main() {
     char pwd[10];
     scanf("%9s", pwd);
 
-    while (true) {
+    do {
         printf("\nInput password: ");
         char pass[10];
         scanf("%9s", pass);
         (strcmp(pass, pwd) == 0) ? printf("logged in") : printf("try again");
-    }
+    } while(true);
 
     return 0;
 }
