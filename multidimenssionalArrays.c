@@ -13,6 +13,7 @@ char grid[3][3] = {{'.','.','.'}, {'.','.','.'}, {'.','.','.'}};
 bool winnerChosen = false;
 
 int main() {
+    srand(time(NULL));
     int table[3][3] = { {1,2,3}, {4,5,6}, {7,8,9} };
 
     printf("WELCOME TO catDogCat GAME!");
@@ -143,8 +144,6 @@ void userMove() {
 }
 
 void randomMoveMaker() {
-
-    srand(time(NULL));
 
     int randomMove = (rand() % 9) + 1;
 
